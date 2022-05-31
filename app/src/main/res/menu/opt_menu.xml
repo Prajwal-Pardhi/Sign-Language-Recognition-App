@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/opt_buy"
+        android:icon="@drawable/ic_baseline_library_add_24"
+        android:title="Buy Subscription"
+        app:showAsAction="ifRoom">
+    </item>
+
+    <item android:id="@+id/opt_learn"
+        android:icon="@drawable/ic_baseline_language_24"
+        android:title="Learn Signs">
+    </item>
+
+    <item android:id="@+id/opt_aboutUs"
+        android:icon="@drawable/ic_baseline_info_24"
+        android:title="About Us">
+    </item>
+
+
+</menu>
