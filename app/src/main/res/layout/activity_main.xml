@@ -53,5 +53,23 @@
         android:text="Speak"
         app:cornerRadius="5sp" />
 
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="20sp"
+        android:text="Go to Camera"
+        app:cornerRadius="5sp" />
 
+    <Button
+        android:id="@+id/btnIPCamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="20sp"
+        android:text="Through External camera using URL"
+        app:cornerRadius="5sp" />
 </LinearLayout>

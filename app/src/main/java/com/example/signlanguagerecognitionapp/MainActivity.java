@@ -20,7 +20,7 @@ import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 Toolbar toolbar;
-Button btnOfSpeak;
+Button btnOfSpeak,btnCamera,btnIPCamera;
 EditText textEnter;
 TextToSpeech textToSpeech;
 String s;
@@ -32,6 +32,8 @@ String s;
 
         toolbar=findViewById(R.id.toolbar);
         btnOfSpeak=(Button)findViewById(R.id.btn_Speak);
+        btnCamera=(Button)findViewById(R.id.btnCamera);
+        btnIPCamera=(Button)findViewById(R.id.btnIPCamera);
         textEnter=(EditText)findViewById(R.id.et_Text);
 
         //Text To Speech code starts
@@ -49,6 +51,23 @@ String s;
             public void onClick(View view) {
                 s= textEnter.getText().toString();
                int speech = textToSpeech.speak(s,textToSpeech.QUEUE_FLUSH,null);
+
+            }
+        });
+        btnCamera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2=new Intent(MainActivity.this,CameraActivity.class);
+                startActivity(intent2);
+
+            }
+        });
+
+        btnIPCamera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent3=new Intent(MainActivity.this,IP_CameraActivity.class);
+                startActivity(intent3);
 
             }
         });
